@@ -30,6 +30,13 @@
           box-sizing: @box-model;
 }
 
+.circle-box(@radius){
+	.border-top-radius(@radius);
+	.border-right-radius(@radius);
+	.border-bottom-radius(@radius);
+	.border-left-radius(@radius);
+}
+
 .border-top-radius(@radius) {
 	border-top-right-radius: @radius;
 	border-top-left-radius: @radius;
@@ -182,3 +189,18 @@
 .columns-push(@factor, @num) {
 	left: ((((@gridWidth - (@gridGutterWidth * (@num - 1))) / @num / (@gridWidth / 100)) * @factor) + ((@gridGutterWidth / (@gridWidth / 100)) * (@factor - 1)) + @gridGutterWidth/(@gridWidth/100)) * 1%;
 }
+
+.default-sans-font(){
+	color: @klaw-blue;
+	font-size:13px;
+	font-family: @aside-sans;
+	font-style: italic;
+}
+
+
+
+
+
+
+
+
