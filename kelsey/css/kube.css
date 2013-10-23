@@ -3889,6 +3889,13 @@ aside h2 {
 -----------------------------------------------------------------------------*/
 /* =Layout
 -----------------------------------------------------------------------------*/
+body {
+  background-image: url("../images/bg.png");
+}
+.wrapper {
+  background-color: #fff;
+  padding: 0;
+}
 .page-links {
   margin-top: 20px;
 }
@@ -3897,31 +3904,18 @@ aside h2 {
   margin: 0;
 }
 .page-links ul li {
-  height: 70px;
-  border-top: 1px solid rgba(255, 255, 255, 0);
-  border-bottom: 1px solid #cccccc;
+  height: 40px;
 }
-.page-links ul li:last-child {
-  border-bottom: 1px solid rgba(255, 255, 255, 0);
-}
-.kelsey {
+.classmate {
   margin-top: 15px;
 }
-.kelsey .icon {
+.classmate .icon {
   float: left;
   width: 40px;
   height: 40px;
-  background-color: #af0100;
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-  border-top-left-radius: 50%;
-  -moz-box-shadow: 2px 5px 6px -6px #000000;
-  -webkit-box-shadow: 2px 5px 6px -6px #000000;
-  box-shadow: 2px 5px 6px -6px #000000;
   margin: 0 10px 0 5px;
 }
-.kelsey h3 {
+.classmate h3 {
   margin-top: 11px;
   float: left;
   font-size: 13px;
@@ -3940,10 +3934,38 @@ aside h2 {
 .wrapper {
   margin: auto;
   max-width: 980px;
-  padding: 36px 10px;
+  padding: 0 10px;
 }
-.main aside {
-  background-color: #f6f6f6;
+.main {
+  border-top: 2px dashed #af0100;
+  padding-top: 15px;
+  margin-top: -19px;
+}
+.main h1 {
+  font-size: 1.5em;
+  color: #af0100;
+  margin-bottom: 1em;
+}
+.unit-75 {
+  font-size: 1.1em;
+  color: #af0100;
+  border-right: 2px dashed #af0100;
+  padding-right: 30px;
+}
+.unit-75 .nbs {
+  font-weight: bold;
+}
+.author {
+  width: 80%px;
+  margin: 0 auto;
+  background-color: #f1f1f1;
+}
+.author p {
+  font-size: 12px;
+  width: 63%;
+  float: right;
+  padding: 2px 0px 0px 9px;
+  padding-top: 2px;
 }
 .blocks li {
   background-color: #f8f8f8;
@@ -3955,7 +3977,6 @@ aside h2 {
 .header {
   overflow: hidden;
   margin-bottom: 1.5em;
-  border-bottom: 1px solid #eee;
 }
 .header h1 {
   float: left;
@@ -3968,10 +3989,11 @@ aside h2 {
 /* =Footer
 -----------------------------------------------------------------------------*/
 .footer {
-  border-top: 1px solid #eee;
+  border-top: 2px dashed #af0100;
   padding-top: 1.5em;
   margin: 1.5em 0;
   font-size: .85em;
+  color: #af0100;
 }
 /* =Tablet (Portrait)
 -----------------------------------------------------------------------------*/
