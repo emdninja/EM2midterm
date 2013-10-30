@@ -1,25 +1,22 @@
-/* =Typography
------------------------------------------------------------------------------*/
 body {
-
+	background-image:url("../images/rp-bg.jpg");
+	background-repeat:repeat;
 }
 
+p{
+	font-size: 18px;
+}
 
-aside h4{
+aside h4, .autor{
 	.default-serif-font();
 }
- .title{
- 	border-bottom: 5px solid @gray-border;
- 	margin-left: -60px;
+
+//artical title
+.title{
+ 	margin-left: -5em;
  } 
 
 
-/* =Links
------------------------------------------------------------------------------*/
-
-
-/* =Layout
------------------------------------------------------------------------------*/
 .page-links ul{
 	list-style: none;
 	margin: 0;
@@ -33,19 +30,23 @@ aside h4{
 	margin-top:15px;
 }
 
-.jasmine .icon{
+.jasmine .icon{//icon image
+	background-image:url("../images/logo.png");
+}
+
+.icon{//icon image
 	float: left;
 	width: 40px;
 	height: 40px;
 	.circle-box(50%);
-	background-color: yellow;
+	background-color: @colorYellow;
 	-moz-box-shadow: inset 3px 2px 5px -1px #000;
     -webkit-box-shadow: inset 3px 2px 5px -1px #000;
     box-shadow: inset 3px 2px 5px -1px #000;
     margin: 0 10px;
 }
 
-.jasmine h3{
+.jasmine h3 ,.classmate h3{//icon link text
 	margin-top: 10px;
 	float: left;
 	font-size: 16px;
@@ -54,31 +55,17 @@ aside h4{
 	color: #494949;
 }
 
-/* =Header
------------------------------------------------------------------------------*/
-
-
-/* =Nav
------------------------------------------------------------------------------*/
-
-
-/* =Misc
------------------------------------------------------------------------------*/
-
-
-/* =Footer
------------------------------------------------------------------------------*/
-/* =Layout
------------------------------------------------------------------------------*/
 .wrapper {
-	margin: auto;
+	margin-top:0;
 	max-width: 980px;
-	padding: 36px 10px;
+	padding:0;
+	border-style: solid; 
+	border-width: 0 30px;
+	border-image: url("../images/bd-bg.png") 90;
+
 	background-color: #E0D9D1;
 }
-//.main aside {
-//	background-color: #f6f6f6;
-//}
+
 .blocks li {
 	background-color: #f8f8f8;
 	padding: 3.3em 0;
@@ -87,19 +74,52 @@ aside h4{
 
 /* =Header
 -----------------------------------------------------------------------------*/
-.header {
-	overflow: hidden;
-	margin-bottom: 1.5em;
-	border-bottom: 1px solid #eee;
+header{
+	height:300px;
 }
-.header h1 {
-	float: left;
+header h1 {
 	margin: 0;
+	color: #FFFFFF;
+	position:relative;
+	font-size: 70px;
+	left: 200px;
 }
-.header nav {
-	padding-top: 10px;
-	float: right;
+
+
+.tag{
+	position: relative;
+	left: -140px;
+	top: -200px;
 }
+
+
+.unit-70{
+	padding: 15px;
+}
+
+
+.unit-60{
+	padding:3em 8em;	
+}
+
+.me{
+	position: relative;
+	top: -3em;
+	
+}
+.about{
+	background-image: url("../images/bg-me.png");
+	background-repeat: no-repeat;
+	margin: 1em;
+}
+
+.about p{
+	position: relative;
+	top:-4em;
+	padding: 0 4em 0 0;
+	font-size: 16px;
+}
+
 
 /* =Footer
 -----------------------------------------------------------------------------*/
@@ -115,22 +135,38 @@ aside h4{
 /* =Tablet (Portrait)
 -----------------------------------------------------------------------------*/
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-    .wrapper { width: 748px; }
+    .wrapper { width: 748px; //background:#FF5050;
+    }//red
+    .about p{padding: 10px;}
+	.unit-60 {width: 70%;}
 }
 
 
 /* =Mobile (Portrait)
 -----------------------------------------------------------------------------*/
 @media only screen and (max-width: 767px) {
-	.wrapper { width: 300px; }
-	.nav, .header h1 { float: none; }
+	.wrapper { width: 300px; //background:#3399FF;
+	}//blue
+	.tag{left: -30px; top: -60px;}
+	.about{ background-image: none;}
+	.nav, .header h1 { float: none;}
 	.header h1 { margin-bottom: .5em; }
 	.nav ul li { margin: 0; float: none; margin-bottom: 1px; background-color: #f6f6f6; }
 	.nav ul li a, .nav ul li span { display: block; padding: 2px 5px; }
+	.about{ background-image: none; margin: 0;}
+	.about p{padding: 10px;}
+	.unit-60 { padding: 0;}
+	.unit-60 {width: 100%;}
 }
 
 /* =Mobile (Landscape)
 -----------------------------------------------------------------------------*/
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-	.wrapper { width: 420px; }
+	.wrapper { width: 420px;//background-color: #00CC99;
+	}//green
+	.tag{left: -50px; top: -90px;}
+	.about{ background-image: none; margin: 0;}
+	.about p{padding: 10px;}
+	.unit-60 { padding: 0;}
+	.unit-60 {width: 100%;}
 }
