@@ -15,27 +15,35 @@
 	<div class="wrapper">
 
 		<header class="header">
-			<img src="images/plaza.jpg"/>
+			<img class="banner" src="images/plaza.jpg"/>
 		</header>
 
 		<div class="main">
-			<h2>Vancouver Skate Plaza</h2>
-<img src="images/grip.jpg"/>
-
+				
 			<div class="units-row">
 				
 				<article class="unit-75">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<div id="don">
+						<img src="images/plaza1.jpg"/>
+						<img src="images/plaza2.jpg"/>
+						<img src="images/plaza3.jpg"/>
+						<img src="images/plaza4.jpg"/>
+					</div>
+					
+					<h2>Vancouver Skate Plaza</h2>
+					<h3>Vancouver Cities Best Skatepark</h3>
+					<p>In 2005 the city of Vancouver offered local street skaters this great spot under the SkyTrain and overpass as an alternative to skating downtown. Everything is laid out as you would expect in a proper street plaza and of course everything is grind-able. The overpass and SkyTrain track offer some protection against both the sun and the rain and the place is lit all night long.</p>
+					<p>The design was developed in close partnership with the Vancouver Skate Coalition, the Vancouver Police Service, and surrounding community members through a series of interactive workshops and a custom online forum set up for ongoing stakeholder feeback. Key emphasis was placed on creating true ‘urban form’, maximizing available budget through creative use of existing site infrastructure and value engineering, and the implementation of sound CPTED principals.</p>
 				</article>
-			
-	
+
+
+
 				<aside class="unit-25">
 					<h2>Map Of Area</h2>
 					<img src="images/map.jpg"/>
 
 					<div class="page-links">
-						<h2>Page Links</h2>
+						<h3>Page Links</h3>
 						<ul>
 							<li>
 								<div class="marcus">
@@ -49,6 +57,27 @@
 					</div>
 			
 				</aside>
+
+
+				<div class="units-row">
+				
+				<article class="unit-75">
+					<h2> About Marcus </h2>
+					<h3>Don VerBrugges Best Friend</h3>
+
+					<img class="circle" src="images/marcus.png"/>
+
+					<p class="bio">Marcus is a young designer living in Vancouver. He loves to skateboard
+						which is why he has chosen the Vancouver skate PLaza has his favorite spot in the city.
+						The plaza is great to hangout, drink acouple of brews and chillax. When Marcus isn't 
+						hanging at the skate plaza he is usually chillin with his homie Donny VerBrugge.
+						A.K.A The Baddest mutha fucka in all da town.</p>
+					
+				</article>
+			
+			
+	
+				
 			</div>
 		</div>
 
@@ -58,6 +87,17 @@
 	<!-- Javascript -->
  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
  	<script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+ 	<script src="js/jquery.slides.min.js" type="text/javascript"></script>
+
+
+ 	<script>
+ 		jQuery(document).ready(function($) {
+ 			$('#don').slidesjs({
+ 				width:900,
+ 				height:440
+ 			})
+ 		});
+ 	</script>
  	<!-- End Javascript -->
 
 </body>

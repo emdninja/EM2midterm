@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Creepster);
 /* =Typography
 -----------------------------------------------------------------------------*/
 #background
@@ -35,8 +36,9 @@ body {
 	max-width: 980px;
 	padding: 36px 10px;
 }
-#main aside {
+.main aside {
 	background-color: #f6f6f6;
+	
 }
 .blocks li {
 	background-color: #f8f8f8;
@@ -47,23 +49,25 @@ body {
 /* =Header
 -----------------------------------------------------------------------------*/
 
-#header {
+.header {
 	overflow: hidden;
 	margin-bottom: 1.5em;
 	border-bottom: 1px solid #eee;
 }
-#header h1 {
+.header h1 {
 	float: left;
 	margin: 0;
 }
-#header nav {
+.header nav {
 	padding-top: 10px;
 	float: right;
 }
 
+.main h2 {font-family: 'Creepster', cursive;}
+
 /* =Footer
 -----------------------------------------------------------------------------*/
-#footer {
+.footer {
 	border-top: 1px solid #eee;
 	padding-top: 1.5em;
 	margin: 1.5em 0;

@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Creepster);
 /*
 	Kube Professional CSS-framework Version 2.0.0
 
@@ -3876,6 +3877,9 @@ a .icon-flip-vertical:before {
 }
 /* =Typography
 -----------------------------------------------------------------------------*/
+body {
+  background-image: url("../images/board2.jpg");
+}
 aside h2 {
   color: #225555, 0, 255;
   font-size: 13px;
@@ -3902,6 +3906,18 @@ aside h2 {
 }
 .marcus {
   margin-top: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.main h2 {
+  font-family: 'Creepster', cursive;
+  color: #00ccbd;
+  font-size: 40px;
+}
+.main h3 {
+  font-family: 'Creepster', cursive;
+  font-size: 15pt;
+  color: #ed0578;
+  margin-top: -12px;
 }
 .marcus .icon {
   float: left;
@@ -3925,6 +3941,21 @@ aside h2 {
   font-style: italic;
   color: #494949;
 }
+.circle {
+  margin-right: 20px;
+  margin-left: 0;
+  float: left;
+  margin-top: 15px;
+}
+.bio {
+  float: left;
+  width: 550px;
+  margin-top: 15px;
+}
+.banner {
+  width: 1200px;
+  margin-bottom: 12px;
+}
 /* =Header
 -----------------------------------------------------------------------------*/
 /* =Nav
@@ -3936,6 +3967,7 @@ aside h2 {
 /* =Layout
 -----------------------------------------------------------------------------*/
 .wrapper {
+  background-color: rgba(255, 255, 255, 0.75);
   margin: auto;
   max-width: 980px;
   padding: 36px 10px;
@@ -3947,6 +3979,71 @@ aside h2 {
   background-color: #f8f8f8;
   padding: 3.3em 0;
   text-align: center;
+}
+.slidesjs-navigation {
+  position: absolute;
+  z-index: 100;
+  top: 80%;
+  font-size: 25px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+.slidesjs-navigation:hover {
+  background-color: #ffffff;
+  color: #000;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+.slidesjs-navigation i {
+  padding: 20px;
+}
+.slidesjs-previous {
+  padding-right: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  position: absolute;
+}
+.slidesjs-next {
+  right: 35.1%;
+  padding-left: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.slidesjs-pagination {
+  float: right;
+  position: relative;
+  right: 50%;
+  margin-top: 20px;
+  list-style: none;
+}
+.slidesjs-pagination li {
+  float: left;
+  margin: 0 1px;
+}
+.slidesjs-pagination li a {
+  display: block;
+  width: 13px;
+  height: 0;
+  padding-top: 13px;
+  background-image: url(../img/pagination.png);
+  background-position: 0 0;
+  float: left;
+  overflow: hidden;
+}
+.slidesjs-pagination li a.active,
+.slidesjs-pagination li a:hover.active {
+  background-position: 0 -13px;
+}
+.slidesjs-pagination li a:hover {
+  background-position: 0 -26px;
 }
 /* =Header
 -----------------------------------------------------------------------------*/
